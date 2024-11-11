@@ -81,13 +81,13 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="684,1048" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="684,886" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Splits a String" sap:VirtualizedContainerService.HintSize="486,1025" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Splits a String" sap:VirtualizedContainerService.HintSize="468,863" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="fullName" />
         <Variable x:TypeArguments="x:String" Name="firstName" />
@@ -98,7 +98,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Assign sap2010:Annotation.AnnotationText="This assigns the full name string to a variable." DisplayName="Assign Full Name" sap:VirtualizedContainerService.HintSize="452,145" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign sap2010:Annotation.AnnotationText="This assigns the full name string to a variable." DisplayName="Assign Full Name" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[fullName]</OutArgument>
         </Assign.To>
@@ -111,7 +111,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <Assign sap2010:Annotation.AnnotationText="This extracts the first name from the full name by splitting the string at the space." DisplayName="Extract First Name" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign sap2010:Annotation.AnnotationText="This extracts the first name from the full name by splitting the string at the space." DisplayName="Extract First Name" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="Assign_2">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[firstName]</OutArgument>
         </Assign.To>
@@ -124,7 +124,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <Assign sap2010:Annotation.AnnotationText="This extracts the last name from the full name by splitting the string at the space." DisplayName="Extract Last Name" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign sap2010:Annotation.AnnotationText="This extracts the last name from the full name by splitting the string at the space." DisplayName="Extract Last Name" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="Assign_3">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[lastName]</OutArgument>
         </Assign.To>
@@ -137,25 +137,14 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,377" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-        <ui:CommentOut.Body>
-          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,266" sap2010:WorkflowViewState.IdRef="Sequence_3">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage sap2010:Annotation.AnnotationText="Logs the first name and last name extracted from the string." DisplayName="Log First Name &amp; Last Name" sap:VirtualizedContainerService.HintSize="382,206" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;First Name is &quot; + firstName + Environment.NewLine + &quot;Last Name is &quot; + lastName]">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:LogMessage>
-          </Sequence>
-        </ui:CommentOut.Body>
-      </ui:CommentOut>
-      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="452,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;First Name is &quot; + firstName + Environment.NewLine + &quot;Last Name is &quot; + lastName]" />
+      <ui:LogMessage sap2010:Annotation.AnnotationText="Logs the first name and last name extracted from the string." DisplayName="Log First Name &amp; Last Name" sap:VirtualizedContainerService.HintSize="434,215" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;First Name is &quot; + firstName + Environment.NewLine + &quot;Last Name is &quot; + lastName]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;First Name is &quot; + firstName + Environment.NewLine + &quot;Last Name is &quot; + lastName]" />
     </Sequence>
   </Sequence>
 </Activity>
