@@ -81,13 +81,13 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="684,886" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="684,671" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Splits a String" sap:VirtualizedContainerService.HintSize="468,863" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Splits a String" sap:VirtualizedContainerService.HintSize="468,648" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="fullName" />
         <Variable x:TypeArguments="x:String" Name="firstName" />
@@ -137,13 +137,6 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <ui:LogMessage sap2010:Annotation.AnnotationText="Logs the first name and last name extracted from the string." DisplayName="Log First Name &amp; Last Name" sap:VirtualizedContainerService.HintSize="434,215" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;First Name is &quot; + firstName + Environment.NewLine + &quot;Last Name is &quot; + lastName]">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:LogMessage>
       <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;First Name is &quot; + firstName + Environment.NewLine + &quot;Last Name is &quot; + lastName]" />
     </Sequence>
   </Sequence>
